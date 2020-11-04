@@ -1,0 +1,161 @@
+@import 'header.css';
+@import 'footer.css';
+@import 'category.css';
+@import 'products.css';
+@import 'faq.css';
+
+:root {
+  --red: #EF233C;
+  --darkerRed: #D90429;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+h3 {
+  padding-bottom: .5em;
+  text-shadow: 0 -1px 0 rgba(0,0,0,4);
+}
+h4 {
+  margin: 1em auto;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em;
+  border-color: var(--red);
+  border-radius: 5px;
+  background-image: linear-gradient(var(--red), var(--darkerRed));
+  background-repeat: repeat-x;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+  width: 300px;
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.btn:hover {
+  background-image: linear-gradient(#cf2c30, var(--darkerRed));
+}
+/* MAIN GRID SECTION */
+.grid-container {
+  display: grid;
+  grid-template:
+    "header header header header header header" 400px
+    "item1  item1  item2  item2  item3  item3"  400px
+    "item4  item4  item4  item5  item5  item5"  300px;
+  grid-gap: 12px;
+}
+.grid-container > div {
+  text-align: center;
+  color: #fff;
+}
+.grid-container > div h3 {
+  margin-top: 50px;
+}
+.stayHome:hover,
+.men:hover,
+.women:hover,
+.accessories:hover,
+.womenShoes:hover,
+.menShoes:hover {
+  opacity:.8;
+}
+#tagline {
+  font-size: 1.8em;
+}
+.stayHome {
+  grid-area: header;
+  background-image: url("/assets/img/main-1.jpeg");
+  background-position: center bottom 25%;
+  background-color: black;
+  background-size: cover;
+}
+.men {
+  grid-area: item1;
+  background-image: url("/assets/img/main-2.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+.women {
+  grid-area: item2;
+  background-image: url("/assets/img/main-3.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+.accesories {
+  grid-area: item3;
+  background-image: url("/assets/img/main-4.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+.menShoes {
+  grid-area: item4;
+  background-image: url("/assets/img/main-5.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+.womenShoes {
+  grid-area: item5;
+  background-image: url("/assets/img/main-6.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+.main-button {
+  padding: .25em 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em;
+  border-radius: 5px;
+  border-color: #fff;
+  background-image: linear-gradient(#fff, #dbdbdb);
+  background-repeat: repeat-x;
+  text-shadow: 0 1px 0 rgba(255,255,255,.9);
+  width: 150px;
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.main-button:hover {
+  background-image: linear-gradient(#ededed, #dbdbdb);
+}
+/* CTA */
+.cta {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.cta h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+.btn {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em;
+  border-color: var(--red);
+  border-radius: 5px;
+  background-image: linear-gradient(var(--red), var(--darkerRed));
+  background-repeat: repeat-x;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+  width: 300px;
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.btn:hover {
+  background-image: linear-gradient(#cf2c30, var(--darkerRed));
+}
+
