@@ -157,6 +157,9 @@
   padding: .25em;
   font-weight: 600;
 }
+.pad-top {
+  padding-top: 3em;
+}
 
 @media screen and (max-width: 560px) {
   #product-card {
